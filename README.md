@@ -1,5 +1,10 @@
 # desktop_multi_window
 
+## TODO
+1. You can register the plugin in window created callback, there has flutter engine instance, so that can keep the internal plugin register along with the newest version, do not need to hard code to register it.
+
+2. About the window alaways on the top to the parent window style development, suggest to impl that in this plugin, for this plugin is been use to create window, and window communicate each other , and another plugin ,such as window_manager, it's just to control signle window behavior. sure, you can do what you think, if convenient.
+
 [![Pub](https://img.shields.io/pub/v/desktop_multi_window.svg)](https://pub.dev/packages/desktop_multi_window)
 
 A flutter plugin that create and manager multi window in desktop.
