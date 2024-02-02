@@ -23,6 +23,12 @@ class MultiWindowManager {
     window.delegate = self
     window.windowChannel.methodHandler = self.handleMethodCall
     windows[windowId] = window
+    for (_, wnd) in windows {
+      if wnd.isVisible {
+        wnd.hide()
+        wnd.show()
+      }
+    }
     return windowId
   }
 

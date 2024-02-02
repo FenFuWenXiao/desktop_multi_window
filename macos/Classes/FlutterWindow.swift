@@ -11,6 +11,10 @@ import Foundation
 class BaseFlutterWindow: NSObject {
   private let window: NSWindow
   let windowChannel: WindowChannel
+  var isVisible: Bool {
+    return window.isVisible
+  }
+
 
   init(window: NSWindow, channel: WindowChannel) {
     self.window = window
